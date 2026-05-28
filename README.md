@@ -1,7 +1,7 @@
 <div align="center">
 
 # 🌐 HTML Theoretical Questions
-### A Complete Reference Guide with Code Examples & Visual References
+### 📖 A Complete Reference Guide with Code Examples & Visual References 🖼️
 
 ![Subject](https://img.shields.io/badge/Subject-HTML_Theory-4f9ef8?style=for-the-badge)
 ![Questions](https://img.shields.io/badge/Questions-20_Total-10b981?style=for-the-badge)
@@ -10,7 +10,7 @@
 
 ---
 
-> 📘 **All answers written in own words** · Code examples included · Visual References previews shown
+> 💡  All answers written in own words · ⚙️ Code examples included · 👁️ Visual References previews shown
 
 </div>
 
@@ -32,8 +32,12 @@
 | [Q9](#q9-clickable-images) | Clickable Images | [Q19](#q19-strong-vs-b-and-em-vs-i) | `<strong>` vs `<b>` |
 
 ---
+## 📁 Q/A Repository
 
-## Question 0:
+<br>
+
+
+## `Question 0:`
 **HTML and HTML5**
 
 > **HTML** `(HyperText Markup Language)` is the foundation of every webpage, it structures content using tags like headings, paragraphs, and links.<br> **HTML5** is just the newer version of HTML. The main differences are:<br> 
@@ -58,14 +62,15 @@
 </html>
 ```
 
-**📸 Visual References:**
+**`📸 Visual References:`**
 
 <img width="450" height="250" alt="image" src="https://github.com/user-attachments/assets/3d6ab9d4-49ce-48f4-acf2-947a84e26efd" />
 
 
 
 
-## Question 1: 
+## `Question 1:` 
+
 **Semantic HTML Tags**
 
 > **Semantic tags**  are HTML elements that tell both the browser and the developer what kind of content is inside them.<br> Instead of using a meaningless `<div>` tag for everything, we use tags that actually mean something, like `<header>`, `<nav>`, or `<article>`.<br>
@@ -107,14 +112,14 @@
 </html>
 ```
 
-**📸 Visual References:**
+**`📸 Visual References:`**
 
 <img width="250" height="300" alt="image" src="https://github.com/user-attachments/assets/8b2d940a-0acf-4084-8867-e73100c66f59" />
 
 
 ---
 
-## Question 2: 
+## `Question 2:`
 **`<div>` vs `<span>`**
 
 > The main difference between `<div>` and `<span>` is how they display content on the page:<br>
@@ -139,7 +144,7 @@
 </html>
 ```
 
-**📸 Visual References:**
+**`📸 Visual References:`**
 
 <img width="1800" height="304" alt="image" src="https://github.com/user-attachments/assets/79741af4-228f-4e5c-a30f-ea7ca812bb5f" />
 
@@ -147,7 +152,7 @@
 
 ---
 
-## Question 3: 
+## `Question 3:`
 **Block-level** vs **Inline Elements**
 
 > In **HTML**, elements are divided into two main display behaviors:<br>
@@ -176,14 +181,14 @@
 </html>
 ```
 
-**📸 Visual Refrences:**
+**`📸 Visual Refrences:`**
 
 <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/ac8b9244-c565-43d3-8760-883d52d152c9" />
 
 
 ---
 
-## Question 4:
+## `Question 4:`
 **DOCTYPE Declaration**
 
 > The `<!DOCTYPE html>` declaration is an instruction to the web browser telling it exactly which version of HTML the page is written in. It is not an actual HTML tag, and it must always be the very first line of code in your file.<br>
@@ -203,14 +208,14 @@
 </html>
 ```
 
-**📸 Visual References:**
+**`📸 Visual References:`**
 
 <img width="450" height="350" alt="image" src="https://github.com/user-attachments/assets/cc51d2a9-c67a-4f8d-95a6-cf9f702e614a" />
 
 
 ---
 
-## Question 5:
+## `Question 5:`
 **id vs class Attributes**
 
 > The main difference is that an `id` is unique to a single element, while a `class` can be reused across multiple elements.<br>
@@ -237,14 +242,14 @@
 ```
 
 
-**📸 Visual References:**
+**`📸 Visual References:`**
 
 <img width="601" height="200" alt="image" src="https://github.com/user-attachments/assets/a6b03548-5f89-4c3c-b2e7-777869e9c565" />
 
 
 ---
 
-## Question 6: 
+## `Question 6:` 
 **HTML Forms & Input Types**
 
 > We create a form in HTML using the `<form>` tag. It acts as a container for capturing user data and uses attributes like action `(where to send data)` and method `(how to send data, like POST or GET)`.<br>
@@ -290,14 +295,14 @@
 </html>
 ```
 
-**📸 Visual References:**
+**`📸 Visual References:`**
 
 <img width="600" height="300" alt="image" src="https://github.com/user-attachments/assets/145bec9c-b9ab-4996-afe6-9552b6f975f8" />
 
 
 ---
 
-## Question 7:
+## `Question 7:`
 **Meta Tags in HTML**
 
 > Meta tags are elements placed inside the `<head>` section of a webpage. They provide background information **(metadata)** about the page that users cannot see directly, but browsers, search engines, and social media platforms use to understand the site.<br>
@@ -331,14 +336,14 @@
 </html>
 ```
 
-**📸 Visual References:**
+**`📸 Visual References:`**
 
 <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/520b2d84-4ac2-4f5d-bdb7-e8749442d586" />
 
 
 ---
 
-## Question 8:
+## `Question 8:`
 **The Alt Attribute**
 
 > The `alt (alternative text)` attribute provides a text description of an image.<br> **It acts as a backup for three main reasons:**<br>
@@ -365,14 +370,14 @@
 </html>
 ```
 
-**📸 Visual References:**
+**`📸 Visual References:`**
 
 <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/c6a183e3-1b37-41b5-864d-0ec719021997" />
 
 
 ---
 
-## Question 9:
+## `Question 9:`
 **Clickable Images**
 
 > To make an image clickable in HTML, we nest (wrap) the `<img>` tag inside an anchor `<a>` tag.<br>
@@ -396,7 +401,7 @@
 </html>
 ```
 
-**📸 Visual References:**
+**`📸 Visual References:`**
 
 <img width="600" height="150" alt="Screenshot 2026-05-27 at 10 16 31 PM" src="https://github.com/user-attachments/assets/a6a2ef26-9f0e-4275-9220-41c7927f9c2e" />
 
@@ -404,7 +409,7 @@
 
 ---
 
-## Question 10:
+## `Question 10:`
 **Image Formats — JPG, PNG, SVG, WebP**
 
 > Choosing the right image format is important for keeping a website fast while maintaining high-quality visuals.<br> **Here is the direct difference:**<br>
@@ -438,14 +443,14 @@
 </html>
 ```
 
-**📸 Visual References:**
+**`📸 Visual References:`**
 
 <img width="605" height="300" alt="Screenshot 2026-05-27 at 10 21 13 PM" src="https://github.com/user-attachments/assets/069cf825-db56-4586-b8e2-b54f3c2e257b" />
 
 
 ---
 
-## Question 11: 
+## `Question 11:` 
 **HTML5 Semantic Tags**
 
 > Semantic tags are HTML elements that clearly describe their meaning to both the browser and the developer. <br>Instead of using generic `<div>` tags everywhere, these tags define the actual structure and layout of a webpage.<br>
@@ -488,14 +493,14 @@
 </html>
 ```
 
-**📸 Visual Refrences:**
+**`📸 Visual Refrences:`**
 
 <img width="400" height="400" alt="Screenshot 2026-05-27 at 10 27 12 PM" src="https://github.com/user-attachments/assets/b2ac6a43-5001-4475-b25b-f69510ce6d77" />
 
 
 ---
 
-## Question 12:
+## `Question 12:`
 **Script, Async, and Defer**
 
 > These attributes control how and when JavaScript files are loaded relative to the HTML parsing of the webpage:<br>
@@ -524,7 +529,7 @@
 </html>
 ```
 
-**📸 Visual References (Timeline):**
+**`📸 Visual References (Timeline):`**
 
 
 <img width="600" height="200" alt="image" src="https://github.com/user-attachments/assets/44931680-d727-40e8-abd8-154c79a34c8b" />
@@ -539,7 +544,7 @@
 
 ---
 
-## Question 13: 
+##` Question 13:` 
 **Embedding Audio & Video**
 
 > HTML5 allows us to embed audio and video files natively using the `<audio>` and `<video>` tags, without needing any old third-party plugins like Flash Player.<br>
@@ -573,14 +578,14 @@
 </html>
 ```
 
-**📸 Visual References:**
+**`📸 Visual References:`**
 
 <img width="600" height="200" alt="Screenshot 2026-05-27 at 10 39 11 PM" src="https://github.com/user-attachments/assets/710835fb-f2de-4338-970b-cf8440f88234" />
 
 
 ---
 
-## Question 14: 
+## `Question 14:`
 Relative vs Absolute Paths
 
 > The main difference is how the browser looks for the linked file or resource:<br>
@@ -606,14 +611,14 @@ Relative vs Absolute Paths
 </html>
 ```
 
-**📸 Visual References:**
+**`📸 Visual References:`**
 
 <img width="800" height="300" alt="image" src="https://github.com/user-attachments/assets/e4842b04-3e6e-4cf3-a334-562f6a346edc" />
 
 
 ---
 
-## Question 15:
+## `Question 15:`
 **Data Attributes**
 
 > Data attributes allows us store extra, custom information inside regular HTML tags without breaking any layout rules. Any attribute name that starts with `data-` is valid.<br>
@@ -642,14 +647,14 @@ Relative vs Absolute Paths
 
 
 
-**📸 Visual References:**
+**`📸 Visual References:`**
 
 <img width="350" height="300" alt="image" src="https://github.com/user-attachments/assets/f46612cb-f25d-462d-adba-3662e3151fed" />
 
 
 ---
 
-## Question 16: 
+## `Question 16:` 
 **Viewport Meta Tag**
 
 > The viewport meta tag tells the browser how to control a webpage's dimensions and scaling on mobile devices. Without it, mobile browsers render the page as if it were on a desktop, making the text tiny and forcing users to zoom in.<br>
@@ -674,14 +679,14 @@ Relative vs Absolute Paths
 </html>
 ```
 
-**📸 Visual References:**
+**`📸 Visual References:`**
 
 <img width="800" height="200" alt="image" src="https://github.com/user-attachments/assets/91be9cb6-51dc-42ce-96c6-9f5d0c6b7520" />
 
 
 ---
 
-## Question 17: 
+## `Question 17:`
 **SEO with HTML**
 
 >` SEO (Search Engine Optimization)` through HTML means structuring your code and content so search engines like Google can easily understand and index your webpage.<br>
@@ -713,14 +718,14 @@ Relative vs Absolute Paths
 </html>
 ```
 
-**📸 Visual References:**
+**`📸 Visual References:`**
 
 <img width="600" height="250" alt="image" src="https://github.com/user-attachments/assets/e82b4d4e-4bda-470f-aecb-758b8addc025" />
 
 
 ---
 
-## Question 18:
+## `Question 18:`
 **Accessibility Best Practices**
 
 > Web accessibility means coding your website in a way that everyone can use it easily, including people who depend on screen readers, keyboard-only navigation, or have visual impairments.<br>
@@ -762,14 +767,14 @@ Relative vs Absolute Paths
 </html>
 ```
 
-**📸 Visual References:**
+**`📸 Visual References:`**
 
 <img width="600" height="250" alt="image" src="https://github.com/user-attachments/assets/2e0dd5e1-c3da-4667-adb1-1d4b4fe61cbd" />
 
 
 ---
 
-## Question 19: 
+## `Question 19:` 
 **`<strong>` vs `<b>` and `<em>` vs `<i>`**
 
 > Even though these tags look exactly the same on a screen, they have completely different meanings (semantics) for search engines and screen readers:
@@ -803,7 +808,7 @@ Relative vs Absolute Paths
 </html>
 ```
 
-**📸 Visual References:**
+**`📸 Visual References:`**
 
 <img width="750" height="240" alt="image" src="https://github.com/user-attachments/assets/e5a7804c-4111-4e4e-b35e-689844689b81" />
 
