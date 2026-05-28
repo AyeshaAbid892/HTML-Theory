@@ -1,16 +1,16 @@
 <div align="center">
 
 # 🌐 HTML Theoretical Questions
-### A Complete Reference Guide with Code Examples & Visual Outputs
+### A Complete Reference Guide with Code Examples & Visual References
 
 ![Subject](https://img.shields.io/badge/Subject-HTML_Theory-4f9ef8?style=for-the-badge)
 ![Questions](https://img.shields.io/badge/Questions-20_Total-10b981?style=for-the-badge)
-![Level](https://img.shields.io/badge/Level-Beginner-f59e0b?style=for-the-badge)
+![Level](https://img.shields.io/badge/Level-Core-f59e0b?style=for-the-badge)
 ![Repo](https://img.shields.io/badge/Repo-html--theory-7c3aed?style=for-the-badge)
 
 ---
 
-> 📘 **All answers written in own words** · Code examples included · Visual output previews shown
+> 📘 **All answers written in own words** · Code examples included · Visual References previews shown
 
 </div>
 
@@ -34,70 +34,112 @@
 ---
 
 ## Question 0:
-What is HTML and HTML5?
+**HTML and HTML5**
 
-> **HTML** (HyperText Markup Language) is the foundation of every webpage — it structures content using tags like headings, paragraphs, and links.<br> **HTML5** is the modern version that adds powerful new features like native audio/video support, semantic elements, canvas drawing, local storage, and much better mobile support — all without needing plugins like Flash.
+> **HTML** `(HyperText Markup Language)` is the foundation of every webpage, it structures content using tags like headings, paragraphs, and links.<br> **HTML5** is just the newer version of HTML. The main differences are:<br> 
+<br>1.`Semantic Tags`:<br> Instead of using generic `<div>` tags everywhere, HTML5 introduces proper tags like `<header>`, `<nav>`, and `<footer>` (as shown in the diagram below).<br> 
+2.`Multimedia`:<br> We can now use native `<video>` and `<audio>` tags directly, without needing old plugins like Flash.
 
 ```html
-<!-- Basic HTML5 Document Structure -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
+<head>
+    <meta charset="UTF-8">
     <title>My HTML5 Page</title>
-  </head>
-  <body>
+</head>
+<body>
+
     <h1>Hello, HTML5!</h1>
-    <video controls src="video.mp4"></video>   <!-- New in HTML5 -->
-    <canvas id="draw"></canvas>                <!-- New in HTML5 -->
-  </body>
+    
+    <video controls src="video.mp4"></video> 
+    <canvas id="draw"></canvas>               
+
+</body>
 </html>
 ```
 
-**📸 Output Preview:**
+**📸 Visual References:**
 
 <img width="450" height="250" alt="image" src="https://github.com/user-attachments/assets/3d6ab9d4-49ce-48f4-acf2-947a84e26efd" />
 
 
 
 
-## Q1: Semantic HTML Tags
+## Question 1: 
+**Semantic HTML Tags**
 
-> **Semantic tags** are HTML elements whose name clearly describes their purpose — for example `<nav>` means navigation, `<article>` means an article. They matter because they help search engines understand page content better (SEO), make websites accessible to screen readers, and make code easier for developers to read and maintain.
+> **Semantic tags**  are HTML elements that tell both the browser and the developer what kind of content is inside them.<br> Instead of using a meaningless `<div>` tag for everything, we use tags that actually mean something, like `<header>`, `<nav>`, or `<article>`.<br>
+**They are important for a few key reasons:**<br>
+<br>1.`Better SEO`: Search engines like Google can scan the page much easier and figure out what the main content is.<br>
+2.`Accessibility`: Screen readers used by visually impaired people can navigate the website correctly.<br>
+3.`Cleaner Code`: It makes the code much easier to read and update for developers because you instantly know what each section does.<br>
 
 ```html
-<!-- Without Semantics (Bad) -->
-<div class="header">My Site</div>
-<div class="nav">Home | About</div>
-<div class="content">Article text...</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Semantic vs Non-Semantic</title>
+</head>
+<body>
 
-<!-- With Semantics (Good) -->
-<header>My Site</header>
-<nav>Home | About</nav>
-<article>Article text...</article>
+    <div class="header">
+        <h1>My Site</h1>
+    </div>
+    <div class="nav">
+        <a href="#">Home</a> | <a href="#">About</a>
+    </div>
+    <div class="content">
+        <p>Article text goes here...</p>
+    </div>
+
+    <header>
+        <h1>My Site</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a> | <a href="#">About</a>
+    </nav>
+    <article>
+        <p>Article text goes here...</p>
+    </article>
+
+</body>
+</html>
 ```
 
-**📸 Output Preview:**
+**📸 Visual References:**
 
 <img width="250" height="300" alt="image" src="https://github.com/user-attachments/assets/8b2d940a-0acf-4084-8867-e73100c66f59" />
 
 
 ---
 
-## Q2: `<div>` vs `<span>`
+## Question 2: 
+**`<div>` vs `<span>`**
 
-> `<div>` is a **block-level** container — it takes up the full width of the page and starts on a new line. <br>`<span>` is an **inline** container — it only takes up as much space as its content and stays on the same line. <br> Use `<div>` for sections/layouts, <br> use `<span>` for styling small pieces of text within a sentence.
+> The main difference between `<div>` and `<span>` is how they display content on the page:<br>
+<br>`<div> (Block-level)`: A div takes up the entire width of the page, meaning it always starts on a new line. We use it as a container to group large sections or build layouts.<br>
+`<span> (Inline)`: A span only takes up as much space as the content inside it and stays on the same line. We use it to style small pieces of text inside a sentence without breaking the layout.
 
 ```html
-<!-- div takes full width, breaks line -->
-<div style="background: lightblue;">I am a div block</div>
-<div style="background: lightcoral;">Another div block</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Div vs Span Example</title>
+</head>
+<body>
 
-<!-- span stays inline within text -->
-<p>My favorite color is <span style="color: red;">red</span> always.</p>
+    <div style="background: lightblue;">I am a div block</div>
+    <div style="background: lightcoral;">Another div block</div>
+
+    <p>My favorite color is <span style="color: red;">red</span> always.</p>
+
+</body>
+</html>
 ```
 
-**📸 Output Preview:**
+**📸 Visual References:**
 
 <img width="1800" height="304" alt="image" src="https://github.com/user-attachments/assets/79741af4-228f-4e5c-a30f-ea7ca812bb5f" />
 
@@ -105,176 +147,256 @@ What is HTML and HTML5?
 
 ---
 
-## Q3: Block-level vs Inline Elements
+## Question 3: 
+**Block-level** vs **Inline Elements**
 
-> **Block-level elements** always start on a new line and stretch across the full available width — examples include `<div>`, `<p>`, `<h1>`, `<ul>`. <br> **Inline elements** sit within the text flow and only occupy as much space as needed — examples include `<span>`, `<a>`, `<strong>`, `<img>`.<br> Block elements can contain inline elements, but not usually the other way around.
+> In **HTML**, elements are divided into two main display behaviors:<br>
+<br>1.`Block-level elements` always start on a brand new line and stretch out to take up the full width available on the screen. Common examples include headings `(<h1> to <h6>)`, paragraphs `(<p>)`, and list items `(<li>)`.<br>
+<br>2.`Inline elements` do not start on a new line. They only take up as much space as their actual content requires and sit directly within the flow of the text. Examples include links `(<a>)`, bold text `(<strong>)`, and images `(<img>)`.<br>
+**Note**: As a general rule, block-level elements can act as containers for inline elements, but inline elements shouldn't contain block-level elements.
 
 ```html
-<!-- Block Elements -->
-<h1>This is a Heading (block)</h1>
-<p>This is a Paragraph (block)</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Block vs Inline</title>
+</head>
+<body>
 
-<!-- Inline Elements -->
-<p>
-  Visit <a href="#">our website</a> and 
-  read <strong>important</strong> updates.
-</p>
+    <h1>This is a Heading (block)</h1>
+    <p>This is a Paragraph (block)</p>
+
+    <p>
+        Visit <a href="#">our website</a> and 
+        read <strong>important</strong> updates.
+    </p>
+
+</body>
+</html>
 ```
 
-**📸 Output Preview:**
+**📸 Visual Refrences:**
 
 <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/ac8b9244-c565-43d3-8760-883d52d152c9" />
 
 
 ---
 
-## Q4: DOCTYPE Declaration
+## Question 4:
+**DOCTYPE Declaration**
 
-> The `<!DOCTYPE html>` declaration tells the web browser which version of HTML the page is written in. Without it, browsers enter "quirks mode" — an old compatibility mode that renders pages inconsistently across browsers. It's not an HTML tag; it's an instruction to the browser. Always place it as the very first line of every HTML file.
+> The `<!DOCTYPE html>` declaration is an instruction to the web browser telling it exactly which version of HTML the page is written in. It is not an actual HTML tag, and it must always be the very first line of code in your file.<br>
+**It is important because:**<br>
+<br>1. It forces the browser to load the page in "`Standards Mode`", ensuring that elements render correctly and look the same across different modern browsers.<br>
+2.Without it, the browser falls back into "`Quirks Mode`", an old compatibility setting that can cause the website's layout to look broken or behave unpredictably.
 
 ```html
-<!DOCTYPE html>   <!-- ✅ Tells browser: "This is HTML5" -->
+<!DOCTYPE html>   <!--  Tells browser: "This is HTML5" -->
 <html lang="en">
   <head>
     <title>Correct Rendering</title>
   </head>
   <body>
-    <p>This renders in standards mode ✅</p>
+    <p>This renders in standards mode </p>
   </body>
 </html>
 ```
 
-**📸 Output Preview:**
+**📸 Visual References:**
 
 <img width="450" height="350" alt="image" src="https://github.com/user-attachments/assets/cc51d2a9-c67a-4f8d-95a6-cf9f702e614a" />
 
 
 ---
 
-## Q5: id vs class Attributes
+## Question 5:
+**id vs class Attributes**
 
-> The `id` attribute is a **unique identifier** — only ONE element on a page can have a specific id. <br>The `class` attribute can be **shared across multiple elements** and one element can have multiple classes. <br> Use `id` for unique landmarks (like a main header). <br> and `class` for reusable styles (like card components or buttons).
+> The main difference is that an `id` is unique to a single element, while a `class` can be reused across multiple elements.<br>
+<br>`id Attribute`: Think of this like a passport number. `Only one element` on a webpage can have a specific ID. We use it for unique landmarks that appear only once, like a main navigation bar or a specific container.<br>
+<br>`class Attribute`: Think of this like a uniform. `Multiple elements` can wear the same class to share the same styling. Also, a single element can have more than one class separated by spaces (like a card that is also highlighted).
 
 ```html
-<!-- id: unique, used once per page -->
-<div id="main-header">Site Header</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ID vs Class Example</title>
+</head>
+<body>
 
-<!-- class: reusable, many elements can share it -->
-<div class="card highlight">Card One</div>
-<div class="card">Card Two</div>
-<div class="card highlight">Card Three</div>
+    <div id="main-header">Site Header</div>
+
+    <div class="card highlight">Card One (Uses two classes)</div>
+    <div class="card">Card Two</div>
+    <div class="card highlight">Card Three</div>
+
+</body>
+</html>
 ```
 
 
-**📸 Output Preview:**
+**📸 Visual References:**
 
 <img width="601" height="200" alt="image" src="https://github.com/user-attachments/assets/a6b03548-5f89-4c3c-b2e7-777869e9c565" />
 
 
 ---
 
-## Q6: HTML Forms & Input Types
+## Question 6: 
+**HTML Forms & Input Types**
 
-> An HTML form collects user data and sends it to a server for processing. <br> The `<form>` tag wraps all inputs, and the `action` attribute defines where data is sent.<br>  HTML5 introduced many new input types like `email`, `date`, `range`, `color`, and `number` that provide built-in validation and mobile-friendly keyboards automatically.
+> We create a form in HTML using the `<form>` tag. It acts as a container for capturing user data and uses attributes like action `(where to send data)` and method `(how to send data, like POST or GET)`.<br>
+**The most commonly used input types and form elements are:**<br>
+<br>1.`text & password`: Used for basic single-line inputs like names, and hidden text fields for passwords.<br>
+2.`email & number`: Modern HTML5 inputs that provide automatic validation and bring up specialized keyboards on mobile devices.<br>
+3.`date`: Built-in element that automatically opens a calendar picker.<br>
+4.`radio & checkbox`: Radio buttons let users pick one option, while checkboxes allow selecting multiple options.<br>
+5.`select & textarea`: Used for drop-down selection menus and multi-line message boxes.
 
 ```html
-<form action="/submit" method="POST">
-  <!-- Common Input Types -->
-  <input type="text"     placeholder="Your name" />
-  <input type="email"    placeholder="Your email" />
-  <input type="password" placeholder="Password" />
-  <input type="number"   min="1" max="100" />
-  <input type="date"     />
-  <input type="checkbox" /> Remember me
-  <input type="radio"    name="size" value="sm" /> Small
-  <input type="radio"    name="size" value="lg" /> Large
-  <select>
-    <option>Option 1</option>
-    <option>Option 2</option>
-  </select>
-  <textarea rows="4" placeholder="Message..."></textarea>
-  <button type="submit">Submit</button>
-</form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Form Example</title>
+</head>
+<body>
+
+    <form action="/submit" method="POST">
+        <input type="text" placeholder="Your name" />
+        <input type="email" placeholder="Your email" />
+        <input type="password" placeholder="Password" />
+        <input type="number" min="1" max="100" placeholder="Age" />
+        <input type="date" />
+
+        <label><input type="checkbox" /> Remember me</label>
+        <br>
+        <label><input type="radio" name="size" value="sm" /> Small</label>
+        <label><input type="radio" name="size" value="lg" /> Large</label>
+
+        <select>
+            <option>Option 1</option>
+            <option>Option 2</option>
+        </select>
+        
+        <textarea rows="4" placeholder="Message..."></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
 ```
 
-**📸 Output Preview:**
+**📸 Visual References:**
 
 <img width="600" height="300" alt="image" src="https://github.com/user-attachments/assets/145bec9c-b9ab-4996-afe6-9552b6f975f8" />
 
 
 ---
 
-## Q7: Meta Tags in HTML
+## Question 7:
+**Meta Tags in HTML**
 
-> Meta tags live inside `<head>` and provide **metadata** — information about the page that isn't displayed to users but is read by browsers, search engines, and social media platforms. They control things like character encoding, page description for Google, how the page appears when shared on Twitter/Facebook, and how the page scales on mobile devices.
+> Meta tags are elements placed inside the `<head>` section of a webpage. They provide background information **(metadata)** about the page that users cannot see directly, but browsers, search engines, and social media platforms use to understand the site.<br>
+**We use them for a few main reasons:**<br>
+<br>1.`charset`: Tells the browser how to render text and special characters correctly.<br>
+2.`viewport`: Makes the webpage responsive and mobile-friendly so it automatically fits smartphone screens.<br>
+3.`description`: The short summary text that appears under your website's link on Google search results.<br>
+4.`Social Previews (og:)`: Controls how the webpage looks `(title, description, and image)` when shared on platforms like Facebook or LinkedIn.
 
 ```html
 <head>
-  <!-- Character encoding - always include this -->
-  <meta charset="UTF-8" />
-
-  <!-- Responsive scaling for mobile devices -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- Description shown in Google search results -->
-  <meta name="description" content="Learn HTML from scratch in 30 days." />
-
-  <!-- Keywords for search engines (less important now) -->
-  <meta name="keywords" content="HTML, CSS, web development" />
-
-  <!-- Open Graph for Facebook/LinkedIn sharing -->
-  <meta property="og:title" content="HTML Course" />
-  <meta property="og:image" content="thumbnail.jpg" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Learn HTML from scratch in 30 days.">
+    
+    <meta property="og:title" content="HTML Course">
+    <meta property="og:image" content="thumbnail.jpg">
+    
+    <title>Meta Tags Example</title>
 </head>
+<body>
+
+    <p>Meta tags work quietly behind the scenes inside the head tag.</p>
+
+</body>
+</html>
 ```
 
-**📸 Output Preview:**
+**📸 Visual References:**
 
 <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/520b2d84-4ac2-4f5d-bdb7-e8749442d586" />
 
 
 ---
 
-## Q8: The Alt Attribute
+## Question 8:
+**The Alt Attribute**
 
-> The `alt` attribute on `<img>` tags provides **alternative text** that appears when an image fails to load, and more importantly, is read aloud by screen readers for visually impaired users.<br>  It also helps search engines understand what the image contains. Always write descriptive alt text — not just "image" or "photo". Leave it empty (`alt=""`) only for purely decorative images.
+> The `alt (alternative text)` attribute provides a text description of an image.<br> **It acts as a backup for three main reasons:**<br>
+<br>1.`Accessibility`: Screen readers read this text aloud to visually impaired users so they understand the content.<br>
+2.`Broken Images`: If the image fails to load due to slow internet, the browser displays this text instead of a blank box.<br>
+3.`SEO`: Search engines cannot see pictures, so they use alt text to understand what the image represents.
 
 ```html
-<!-- ✅ Good alt text - descriptive and meaningful -->
-<img src="sunset.jpg" alt="Orange sunset over mountain peaks at dusk" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alt Attribute Example</title>
+</head>
+<body>
 
-<!-- ✅ Decorative image - empty alt tells screen reader to skip it -->
-<img src="divider-line.png" alt="" />
+    <img src="sunset.jpg" alt="Orange sunset over mountain peaks at dusk">
 
-<!-- ❌ Bad alt text - not helpful at all -->
-<img src="dog.jpg" alt="image" />
-<img src="dog.jpg" />  <!-- Missing alt entirely! -->
+    <img src="divider-line.png" alt="">
+
+    <img src="dog.jpg" alt="image">
+
+</body>
+</html>
 ```
 
-**📸 Output Preview:**
+**📸 Visual References:**
 
 <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/c6a183e3-1b37-41b5-864d-0ec719021997" />
 
 
 ---
 
-## Q9: Clickable Images
+## Question 9:
+**Clickable Images**
 
-> To make an image clickable in HTML, simply wrap it in an anchor `<a>` tag.<br>  The `href` attribute on the `<a>` tag defines where clicking the image will navigate the user.<br>  You can also add `target="_blank"` to open the link in a new tab. <br> This technique is commonly used for logo images that link back to the homepage.
+> To make an image clickable in HTML, we nest (wrap) the `<img>` tag inside an anchor `<a>` tag.<br>
+<br>1.The href attribute on the `<a>` tag defines the destination URL where the user will be taken.<br>
+2.You can also add `target="_blank"` if you want the link to open up in a separate new tab instead of the current one.
 
 ```html
-<!-- Basic clickable image -->
-<a href="https://example.com">
-  <img src="logo.png" alt="Go to Example website" />
-</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clickable Image Example</title>
+</head>
+<body>
 
-<!-- Opens in new tab -->
-<a href="https://example.com" target="_blank" rel="noopener noreferrer">
-  <img src="banner.jpg" alt="Special Offer Banner" width="300" />
-</a>
+    <a href="https://www.cuterabbit.com">
+        <img src="images/rabbit-hero.jpg" alt="Cute Rabbit" class="responsive-hero">
+    </a>
+
+</body>
+</html>
 ```
 
-**📸 Output Preview:**
+**📸 Visual References:**
 
 <img width="600" height="150" alt="Screenshot 2026-05-27 at 10 16 31 PM" src="https://github.com/user-attachments/assets/a6a2ef26-9f0e-4275-9220-41c7927f9c2e" />
 
@@ -282,95 +404,127 @@ What is HTML and HTML5?
 
 ---
 
-## Q10: Image Formats — JPG, PNG, SVG, WebP
+## Question 10:
+**Image Formats — JPG, PNG, SVG, WebP**
 
-> Choosing the right image format affects file size, quality, and how the image behaves. <br> **JPG** is best for photos (lossy compression, small file size). <br>**PNG** supports transparent backgrounds and is best for logos/icons.<br> **SVG** is a vector format that scales to any size without losing quality. <br>**WebP** is a modern format that's smaller than both JPG and PNG while maintaining quality.
+> Choosing the right image format is important for keeping a website fast while maintaining high-quality visuals.<br> **Here is the direct difference:**<br>
+<br>1.`JPG (JPEG)`: Best for complex photographs. It `uses compression` to keep file sizes relatively small, but it does not support transparent backgrounds.<br>
+2.`PNG`: Best for logos, icons, and graphics that require a clear or` transparent background`. File sizes are usually larger than JPGs.<br>
+3.`SVG`: Unlike other formats, this is a `vector format` based on code. It is infinitely scalable, meaning it will never get blurry or pixelated no matter how big you stretch it. Perfect for UI icons.<br>
+4.`WebP`: The modern, standard choice for `web photos`. It offers significantly smaller file sizes than both JPG and PNG without losing any visual quality.
 
 ```html
 <!-- JPG: photographs and complex images -->
-<img src="photo.jpg" alt="Mountain landscape" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Formats Example</title>
+</head>
+<body>
 
-<!-- PNG: logos or images needing transparency -->
-<img src="logo.png" alt="Company logo with transparent background" />
+    <img src="photo.jpg" alt="Mountain landscape">
 
-<!-- SVG: icons and illustrations (infinitely scalable) -->
-<img src="icon.svg" alt="Search icon" />
-<!-- OR inline SVG -->
-<svg width="24" height="24" viewBox="0 0 24 24">
-  <circle cx="12" cy="12" r="10" fill="blue" />
-</svg>
+    <img src="logo.png" alt="Company logo with transparent background">
 
-<!-- WebP: best modern option for photos on web -->
-<picture>
-  <source srcset="photo.webp" type="image/webp" />
-  <img src="photo.jpg" alt="Fallback for older browsers" />
-</picture>
+    <img src="icon.svg" alt="Search icon">
+    
+    <picture>
+        <source srcset="photo.webp" type="image/webp">
+        <img src="photo.jpg" alt="Fallback landscape photo">
+    </picture>
+
+</body>
+</html>
 ```
 
-**📸 Output Preview:**
+**📸 Visual References:**
 
 <img width="605" height="300" alt="Screenshot 2026-05-27 at 10 21 13 PM" src="https://github.com/user-attachments/assets/069cf825-db56-4586-b8e2-b54f3c2e257b" />
 
 
 ---
 
-## Q11: HTML5 Semantic Tags
+## Question 11: 
+**HTML5 Semantic Tags**
 
-> HTML5 introduced dedicated semantic tags to replace generic `<div>` containers with meaningful structure.<br> `<header>` contains the page title and navigation. <br>`<footer>` holds copyright and links.<br> `<section>` groups related content. <br>`<article>` represents independent, self-contained content like a blog post that could stand alone on any page.
+> Semantic tags are HTML elements that clearly describe their meaning to both the browser and the developer. <br>Instead of using generic `<div>` tags everywhere, these tags define the actual structure and layout of a webpage.<br>
+**The core tags introduced in HTML5 are:**<br>
+<br>1.`<header>`: Represents the top introductory section of a page, usually containing the website logo and main navigation menu.<br>
+2.`<nav>`: Specifically used to wrap block links intended for website navigation.<br>
+3.`<main>`: Contains the dominant, unique core content of the document.<br>
+4.`<section>`: Groups related content together into thematic chapters or chunks.<br>
+5.`<article>`: Defines independent, self-contained content (like a blog post or news story) that could stand alone outside the page.<br>
+6.`<aside>`: Used for sidebars or content that is indirectly related to the main text around it.<br>
+7.`<footer>`: Placed at the bottom of the page, containing copyrights, privacy policies, or quick links.
 
 ```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Short Semantic Example</title>
+</head>
 <body>
-  <header>
-    <h1>My Blog</h1>
-    <nav>
-      <a href="/home">Home</a>
-      <a href="/about">About</a>
-    </nav>
-  </header>
 
-  <main>
+    <header>
+        <h1>Website Title</h1>
+    </header>
+
     <section>
-      <h2>Latest Posts</h2>
-      <article>
-        <h3>Post Title</h3>
-        <p>Post content goes here...</p>
-      </article>
+        <h2>Blog Section</h2>
+        
+        <article>
+            <h3>Article Title</h3>
+            <p>This is the main content of the post.</p>
+        </article>
     </section>
 
-    <aside>
-      <h3>Related Links</h3>
-    </aside>
-  </main>
+    <footer>
+        <p>&copy; 2026 My Website</p>
+    </footer>
 
-  <footer>
-    <p>&copy; 2024 My Blog. All rights reserved.</p>
-  </footer>
 </body>
+</html>
 ```
 
-**📸 Output Preview:**
+**📸 Visual Refrences:**
 
 <img width="400" height="400" alt="Screenshot 2026-05-27 at 10 27 12 PM" src="https://github.com/user-attachments/assets/b2ac6a43-5001-4475-b25b-f69510ce6d77" />
 
 
 ---
 
-## Q12: Script, Async, and Defer
+## Question 12:
+**Script, Async, and Defer**
 
-> These three approaches control **when and how JavaScript files are loaded** relative to HTML parsing.<br> Normal `<script>` blocks HTML parsing until the JS downloads and runs.<br> `async` downloads JS in parallel but runs it immediately when ready (can interrupt parsing). <br>`defer` downloads JS in parallel but waits until HTML is fully parsed before running — this is usually the best choice.
+> These attributes control how and when JavaScript files are loaded relative to the HTML parsing of the webpage:<br>
+<br>1.`Normal <script>`: The browser stops parsing HTML completely to download and run the JavaScript file immediately. This can `slow down page` loading.<br>
+2.`async`: JavaScript downloads in the background (parallel) and executes the exact moment it is ready. This can `interrupt HTML` parsing and doesn't guarantee the execution order of multiple scripts.<br>
+3.`defer`: JavaScript downloads in the background (parallel) but waits until the HTML parsing is 100% finished before executing. This is usually the `best practice` for performance.
 
 ```html
-<!-- NORMAL: Blocks HTML parsing ❌ (slow) -->
-<script src="app.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Script Loading Example</title>
 
-<!-- ASYNC: Downloads parallel, runs immediately (order not guaranteed) -->
-<script async src="analytics.js"></script>
+    <script src="script.js"></script>
 
-<!-- DEFER: Downloads parallel, runs after HTML parsed ✅ (best) -->
-<script defer src="main.js"></script>
+    <script src="async-script.js" async></script>
+
+    <script src="defer-script.js" defer></script>
+</head>
+<body>
+
+    <h1>Script, Async, and Defer Comparison</h1>
+
+</body>
+</html>
 ```
 
-**📸 Output Preview (Timeline):**
+**📸 Visual References (Timeline):**
 
 
 <img width="600" height="200" alt="image" src="https://github.com/user-attachments/assets/44931680-d727-40e8-abd8-154c79a34c8b" />
@@ -385,204 +539,271 @@ What is HTML and HTML5?
 
 ---
 
-## Q13: Embedding Audio & Video
+## Question 13: 
+**Embedding Audio & Video**
 
-> HTML5 made it possible to embed audio and video natively without any third-party plugins. <br> The `<video>` tag embeds video with playback controls, and <br> `<audio>` does the same for sound. Both support multiple source formats so browsers can pick whichever format they support.<br>  The `controls` attribute adds the built-in play/pause/volume interface.
+> HTML5 allows us to embed audio and video files natively using the `<audio>` and `<video>` tags, without needing any old third-party plugins like Flash Player.<br>
+**Key aspects of these tags include:**<br>
+<br>1.`controls Attribute`: Adds the default `browser buttons` like play, pause, and volume control so users can interact with the media.<br>
+2.`<source> Tags`: Used inside the media player to provide multiple file formats `(like MP4/WebM for video, and MP3/OGG for audio)` so the browser can pick the one it supports.<br>
+3.`Fallback Text`: Simple text placed `inside the tags` that only displays if a user is using an outdated browser that doesn't support HTML5 media.
 
 ```html
-<!-- Video Embed -->
-<video width="640" height="360" controls autoplay muted loop>
-  <source src="movie.mp4"  type="video/mp4" />
-  <source src="movie.webm" type="video/webm" />
-  <p>Your browser doesn't support video. <a href="movie.mp4">Download it</a></p>
-</video>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Embedding Media Example</title>
+</head>
+<body>
 
-<!-- Audio Embed -->
-<audio controls>
-  <source src="song.mp3" type="audio/mpeg" />
-  <source src="song.ogg" type="audio/ogg" />
-  <p>Your browser doesn't support audio.</p>
-</audio>
+    <video width="640" height="360" controls autoplay muted loop>
+        <source src="movie.mp4" type="video/mp4">
+        <source src="movie.webm" type="video/webm">
+        <p>Your browser doesn't support video. <a href="movie.mp4">Download it</a></p>
+    </video>
+
+    <audio controls>
+        <source src="song.mp3" type="audio/mpeg">
+        <source src="song.ogg" type="audio/ogg">
+        <p>Your browser doesn't support audio.</p>
+    </audio>
+
+</body>
+</html>
 ```
 
-**📸 Output Preview:**
+**📸 Visual References:**
 
 <img width="600" height="200" alt="Screenshot 2026-05-27 at 10 39 11 PM" src="https://github.com/user-attachments/assets/710835fb-f2de-4338-970b-cf8440f88234" />
 
 
 ---
 
-## Q14: Relative vs Absolute Paths
+## Question 14: 
+Relative vs Absolute Paths
 
-> A **relative path** points to a file based on the current file's location — it's like giving directions from where you are now ("go up one folder, then into images"). <br> An **absolute path** includes the full URL or full file path from the root — it works from anywhere regardless of where the current file is located.<br>  Use relative paths for your own project files; absolute for external resources.
+> The main difference is how the browser looks for the linked file or resource:<br>
+<br>1.`Relative Path`: Points to a file based on your current file's location. It is like giving local directions from where you are standing right now `(e.g., "look inside the current folder" )`. We use this for internal project files.<br>
+2.`Absolute Path`: Points to the exact, complete `URL or directory path` from the root. It works from anywhere on the internet regardless of where your current HTML file is stored. We use this for linking external websites or assets.<br> **Note**: Use relative paths for your `own project files`; absolute for `external resources.`
 
 ```html
-<!-- ABSOLUTE PATH: Full URL — works from anywhere -->
-<img src="https://mysite.com/images/logo.png" alt="Logo" />
-<a href="https://google.com">Visit Google</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>File Paths Example</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
 
-<!-- RELATIVE PATH: Based on current file location -->
-<img src="images/logo.png" alt="Logo" />      <!-- same folder's images/ -->
-<img src="../images/logo.png" alt="Logo" />   <!-- go up one folder first -->
-<img src="./assets/logo.png" alt="Logo" />    <!-- same directory -->
+    <img src="https://example.com/logo.png" alt="External Logo">
+    <a href="https://google.com">Visit Google</a>
 
-<!-- ROOT-RELATIVE: Starts from domain root -->
-<img src="/images/logo.png" alt="Logo" />
+    <img src="images/logo.png" alt="Local Logo">
+
+</body>
+</html>
 ```
 
-**📸 Output Preview:**
+**📸 Visual References:**
 
 <img width="800" height="300" alt="image" src="https://github.com/user-attachments/assets/e4842b04-3e6e-4cf3-a334-562f6a346edc" />
 
 
 ---
 
-## Q15: Data Attributes
+## Question 15:
+**Data Attributes**
 
-> Data attributes (`data-*`) let you store **custom information directly on HTML elements** without breaking HTML standards. <br> Any attribute starting with `data-` followed by your chosen name is valid.<br>  They're perfect for storing IDs, config values, or state information that JavaScript needs to access. You read them in JS using `element.dataset.yourname`.
+> Data attributes allows us store extra, custom information inside regular HTML tags without breaking any layout rules. Any attribute name that starts with `data-` is valid.<br>
+**They are mainly used for:**<br>
+<br>1.`JavaScript`: To easily pass data from HTML into scripts using element.dataset.<br>
+2.`State Management`: Storing specific info like product IDs, filter categories, or prices right on the element.
 
 ```html
-<!-- Storing custom data on HTML elements -->
-<button data-user-id="42" data-role="admin" data-color="blue">
-  Edit User
-</button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Attributes Example</title>
+</head>
+<body>
 
-<div data-product-id="PRD-001" 
-     data-price="29.99" 
-     data-category="electronics">
-  Product Card
-</div>
+    <img src="book.jpg" alt="Sherlock Holmes" data-author="Arthur Conan" data-pages="329">
+
+    <div data-product-id="PRD-001" data-price="29.99">
+        <p>Product Card</p>
+    </div>
+
+</body>
+</html>
 ```
 
 
 
-**📸 Output Preview:**
+**📸 Visual References:**
 
 <img width="350" height="300" alt="image" src="https://github.com/user-attachments/assets/f46612cb-f25d-462d-adba-3662e3151fed" />
 
 
 ---
 
-## Q16: Viewport Meta Tag
+## Question 16: 
+**Viewport Meta Tag**
 
-> The viewport meta tag controls how a webpage is **displayed on mobile devices**. Without it, mobile browsers pretend the screen is desktop-width (usually 980px) and scale everything down — making text tiny and requiring users to zoom in. Setting `width=device-width` tells the browser to use the actual screen width, and `initial-scale=1.0` prevents zooming on load.
+> The viewport meta tag tells the browser how to control a webpage's dimensions and scaling on mobile devices. Without it, mobile browsers render the page as if it were on a desktop, making the text tiny and forcing users to zoom in.<br>
+**Here is what its main settings do:**<br>
+<br>1.`width=device-width`: Sets the width of the page to match the actual screen width of the device being used (phone, tablet, etc.).<br>
+2.`initial-scale=1.0`: Sets the initial zoom level when the webpage first loads, preventing browsers from automatically scaling down the content.
 
 ```html
-<!-- Always include in every HTML page for responsive design -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viewport Example</title>
+</head>
+<body>
 
-<!-- Advanced options (use carefully): -->
-<meta name="viewport" content="width=device-width, 
-                                initial-scale=1.0,
-                                maximum-scale=1.0,
-                                user-scalable=no" />
+    <h1>Responsive Web Page</h1>
+    <p>This page scales perfectly on both desktop and mobile devices.</p>
+
+</body>
+</html>
 ```
 
-**📸 Output Preview:**
+**📸 Visual References:**
 
 <img width="800" height="200" alt="image" src="https://github.com/user-attachments/assets/91be9cb6-51dc-42ce-96c6-9f5d0c6b7520" />
 
 
 ---
 
-## Q17: SEO with HTML
+## Question 17: 
+**SEO with HTML**
 
-> SEO (Search Engine Optimization) through HTML means structuring your content in ways that help Google understand it better.<hr> This includes using proper heading hierarchy (`h1` through `h6`), writing descriptive meta descriptions, using semantic tags, adding `alt` text to images, using `<title>` tags effectively, and ensuring clean, fast-loading HTML. Good HTML structure is the foundation of all SEO.
+>` SEO (Search Engine Optimization)` through HTML means structuring your code and content so search engines like Google can easily understand and index your webpage.<br>
+**We can achieve this by implementing these key practices:**<br>
+<br>1.`Descriptive Meta Tags`: Using a unique `<title>` tag and a `<meta name="description">` tag inside the head section to show a clean snippet on search result pages.<br>
+2.`Proper Heading Hierarchy`: Using only one `<h1>` tag for the main topic, followed by sequential subheadings `(<h2>, <h3>, etc.)` to create a clear layout.<br>
+3.`Image Alt Text`: Adding descriptive `alt attributes` to all images so search engine bots know what the picture represents.<br>
+4.`Semantic Links`: Writing descriptive text inside anchor tags `(<a>)` instead of generic phrases like "click here".
 
 ```html
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <!-- 1. Descriptive, keyword-rich title (50-60 chars) -->
-  <title>Buy Handmade Leather Bags | CraftBag Store</title>
-
-  <!-- 2. Meta description (150-160 chars) for search snippets -->
-  <meta name="description" content="Shop handmade leather bags crafted in Italy. 
-  Free shipping on orders over $50. 100% genuine leather guaranteed." />
-
-  <!-- 3. Canonical URL prevents duplicate content issues -->
-  <link rel="canonical" href="https://craftbag.com/leather-bags" />
+    <meta charset="UTF-8">
+    <title>Buy Handmade Leather Bags | CraftBag Store</title>
+    <meta name="description" content="Shop handmade leather bags crafted in Italy. Free shipping on orders over $50.">
 </head>
 <body>
-  <!-- 4. One H1 per page — the main topic -->
-  <h1>Handmade Leather Bags</h1>
 
-  <!-- 5. H2/H3 for subheadings — clear hierarchy -->
-  <h2>Our Best Sellers</h2>
+    <h1>Handmade Leather Bags</h1>
+    <h2>Our Best Sellers</h2>
     <h3>The Milano Tote</h3>
 
-  <!-- 6. Descriptive alt text on all images -->
-  <img src="tote.jpg" alt="Brown leather Milano tote bag with gold buckle" />
+    <img src="tote.jpg" alt="Brown leather Milano tote bag with gold buckle">
 
-  <!-- 7. Descriptive link text (not "click here") -->
-  <a href="/bags/milano">View the Milano Collection</a>
+    <a href="/bags/milano">View the Milano Collection</a>
+
 </body>
+</html>
 ```
 
-**📸 Output Preview:**
+**📸 Visual References:**
 
 <img width="600" height="250" alt="image" src="https://github.com/user-attachments/assets/e82b4d4e-4bda-470f-aecb-758b8addc025" />
 
 
 ---
 
-## Q18: Accessibility Best Practices
+## Question 18:
+**Accessibility Best Practices**
 
-> Web accessibility means building sites that **everyone can use** — <br> including people using screen readers, keyboard-only navigation, or who have visual/motor impairments.<br> Key practices include: always using `alt` text on images, adding `label` elements to form inputs, using proper semantic HTML, ensuring sufficient color contrast, and making everything keyboard-navigable.
+> Web accessibility means coding your website in a way that everyone can use it easily, including people who depend on screen readers, keyboard-only navigation, or have visual impairments.<br>
+**Here are the most important practices to follow:**<br>
+<br>1.`Use Proper Labels`: Always link form inputs with `<label>` tags so screen readers can tell users exactly what they need to type.<br>
+2.`Add ARIA Labels`: Use attributes like `aria-label` to give screen readers extra context on custom components, like close buttons or navigation blocks.<br>
+3.`Include Skip Links`: Add a hidden `"Skip to main content"` link at the very top so keyboard-only users don't have to tab through long menus every time.<br>
+4.`Keep Headings in Order`: Follow a clean hierarchy `(<h1> then <h2>, then <h3>)` so the structure of the page makes sense immediately.<br>
+5.`Set the Language`: Always specify the `<html lang="en">` tag at the start so screen readers know what language pronunciation to use.
 
 ```html
-<!-- 1. Labels for form inputs (screen readers need this) -->
-<label for="username">Username:</label>
-<input type="text" id="username" name="username" />
-
-<!-- 2. ARIA roles and labels for custom components -->
-<button aria-label="Close dialog" onclick="closeModal()">✕</button>
-<nav aria-label="Main navigation">...</nav>
-
-<!-- 3. Skip to content link (keyboard users skip nav) -->
-<a href="#main-content" class="skip-link">Skip to main content</a>
-
-<!-- 4. Proper heading hierarchy -->
-<h1>Page Title</h1>
-  <h2>Section</h2>
-    <h3>Subsection</h3>
-
-<!-- 5. Language declaration for screen readers -->
+<!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Accessibility Best Practices</title>
+</head>
+<body>
 
-<!-- 6. Table with proper accessibility markup -->
-<table>
-  <caption>Monthly Sales Data</caption>
-  <thead>
-    <tr><th scope="col">Month</th><th scope="col">Sales</th></tr>
-  </thead>
-</table>
+    <a href="#main-content">Skip to main content</a>
+
+    <header>
+        <h1>Page Title</h1>
+        <nav aria-label="Main navigation">
+            <a href="/home">Home</a>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <h2>Section Heading</h2>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+
+        <button aria-label="Close dialog" onclick="closeModal()">X</button>
+    </main>
+
+</body>
+</html>
 ```
 
-**📸 Output Preview:**
+**📸 Visual References:**
 
 <img width="600" height="250" alt="image" src="https://github.com/user-attachments/assets/2e0dd5e1-c3da-4667-adb1-1d4b4fe61cbd" />
 
 
 ---
 
-## Q19: `<strong>` vs `<b>` and `<em>` vs `<i>`
+## Question 19: 
+**`<strong>` vs `<b>` and `<em>` vs `<i>`**
 
-> These pairs look similar visually but have very different meanings. `<strong>` means the content is **critically important** (screen readers emphasize it). `<b>` just makes text bold for visual styling with no semantic importance. Similarly, `<em>` indicates **stress emphasis** that changes meaning. `<i>` simply italicizes text for stylistic purposes like book titles or technical terms — no extra importance implied.
+> Even though these tags look exactly the same on a screen, they have completely different meanings (semantics) for search engines and screen readers:
+<br> `<strong>` vs `<b>` (Bold Text):<br>
+<br>1.`<strong>`: Means the content is genuinely important or an urgent warning. Screen readers read this out with a louder or serious tone.<br>
+2.`<b>`: Just styles the text to look bold for visual design, carrying absolutely no extra meaning or importance.<br>
+<br> `<em>` vs `<i>` (Italic Text):<br>
+<br>1.`<em>` (Emphasis): Adds verbal stress or emphasis to a word, which can change the actual meaning of the sentence. Screen readers read this with a stressed voice.<br>
+2.`<i>`: Simply tilts the text to italics for purely styling purposes, like formatting book titles, technical terms, or thoughts.<br>
 
 ```html
-<!-- STRONG vs B -->
-<p>
-  <strong>Warning: Do not delete this file!</strong>   <!-- Important! -->
-  The <b>Quick Start Guide</b> is on page 3.            <!-- Just styled -->
-</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Semantic Text Tags</title>
+</head>
+<body>
 
-<!-- EM vs I -->
-<p>
-  I said I <em>love</em> cats — not dogs.     <!-- Changes meaning with stress -->
-  Read <i>The Great Gatsby</i> this summer.   <!-- Book title — stylistic only -->
-</p>
+    <p>
+        <strong>Warning: Do not delete this file!</strong>
+        The <b>Quick Start Guide</b> is on page 3.
+    </p>
+
+    <p>
+        I said I <em>love</em> cats – not dogs.
+        Read <i>The Great Gatsby</i> this summer.
+    </p>
+
+</body>
+</html>
 ```
 
-**📸 Output Preview:**
+**📸 Visual References:**
 
 <img width="750" height="240" alt="image" src="https://github.com/user-attachments/assets/e5a7804c-4111-4e4e-b35e-689844689b81" />
 
@@ -600,7 +821,7 @@ What is HTML and HTML5?
 
 ## 🎓 Summary
 
-> This README covers all 20 HTML theoretical concepts with code examples and visual output previews. Each answer explains the *what*, the *why*, and shows *how it looks* in the browser.
+> This README covers all 20 HTML theoretical concepts with code examples and Visual Refrences previews. Each answer explains the *what*, the *why*, and shows *how it looks* in the browser.
 
 ---
 
