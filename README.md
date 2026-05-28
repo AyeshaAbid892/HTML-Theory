@@ -32,6 +32,7 @@
 | [Q9](#q9-clickable-images) | Clickable Images | [Q19](#q19-strong-vs-b-and-em-vs-i) | `<strong>` vs `<b>` |
 
 ---
+
 ## 📁 Q/A Repository
 
 <br>
